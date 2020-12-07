@@ -1,11 +1,8 @@
 /*
-    Code and comments written by Connor Tollefson on GitHub
+    Code written by Connor Tollefson on GitHub
     Completed 12/6/20
 */
 
-/* The star indicates ALL elements unless later stated (it reads top to bottom, so styles can be overwritten) 
-Removing the default margin and padding (the default spacers between elements) is common practice because they're annoying
-*/
 *{
     margin: 0px;
     padding: 0px;
@@ -13,22 +10,19 @@ Removing the default margin and padding (the default spacers between elements) i
   
 body
 {
-    /* Defining default text color, font families, alignment, and font size */
     color: #cdcdcd;
     font-family: "Avenir Next", "Avenir", sans-serif;
     text-align: center;
-    font-size: 1.5em;
-
-    /* Setting the background gradient animation */
+    font-size: 1.7em;
     background: linear-gradient(253deg, #0cc898, #1478fa);
     background-size: 300% 300%;
     -webkit-animation: Background 25s ease infinite;
     -moz-animation: Background 25s ease infinite;
     animation: Background 25s ease infinite;
 }
-  
-/* Default keyframes for all browsers */  
-@-webkit-keyframes Background {
+
+@-webkit-keyframes Background 
+{
     0% {
     background-position: 0% 50%
     }
@@ -40,8 +34,8 @@ body
     }
 }
 
-/* Mozilla keyframes */
-@-moz-keyframes Background {
+@-moz-keyframes Background 
+{
     0% {
     background-position: 0% 50%
     }
@@ -53,7 +47,8 @@ body
     }
 }
 
-@keyframes Background {
+@keyframes Background 
+{
     0% {
     background-position: 0% 50%
     }
@@ -65,37 +60,8 @@ body
     }
 }
 
-#content {
-    position: relative;
-    animation-name: content;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-    }
-    
-    @keyframes content{
-    0% {left: -1000px;}
-    100% {left: 0px;}
-    }
-    
-    .btn{
-        display: inline-block;
-        color: white;
-        text-decoration: none;
-        padding: 1rem 2rem;
-        border: white 1px solid;
-        border-radius: 30%;
-        margin-top: 40px;
-        opacity: 0;
-        animation-name: btn;
-        animation-duration: 3s;
-        animation-delay: 3s;
-        animation-fill-mode: forwards;
-        transition-property: transform;
-        transition-duration: 1s;
-    }
-
-/* Makes the gradient fill the whole page */
-.full-screen {
+.full-screen 
+{
     position: fixed;
     top: 0;
     right: 0;
@@ -108,7 +74,6 @@ body
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: column;
-    
     flex-direction: column;
     -webkit-align-items: center;
     align-items: center;
@@ -123,13 +88,13 @@ body
     100% {top: 200px;}
 }
 
-@keyframes btn 
-{
-    0%{opacity: 0}
-    100%{opacity: 1}
+#content {
+    position: relative;
+    animation-name: content;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
 }
 
-/* Defines what the <h1> tag text should look like - this is used for main heading text */
 h1 {
     color: #fff;
     font-family: 'Avenir', sans-serif;
@@ -140,7 +105,11 @@ h1 {
     text-shadow: 1px 2px 1px rgba(0, 0, 0, .6);
 }
 
-/* Styling the <hr> tag to look nicer and not stretch across the whole screen */
+.about-title
+{
+    margin-top: 40px;
+}
+
 .topic-divider
 {
     width: 50%;
@@ -153,41 +122,45 @@ h1 {
 .subtopic
 {
     padding-left:40px;
-    padding-right:40px;
 }
 
 .subtopic-body
 {
     padding-top: 10px;
-    padding-right: 40px;
     padding-left: 40px;
+    padding-right: 40px;
+    font-size: 1.6em;
+    color: white;
 }
 
-.container 
-{
+.container{
     max-width: 960px;
     margin: auto;
     padding: 0 30px;
 }
 
-/* Hashtags denote id styling, while . (such as .container) refers to classes */
-#showcase 
+.side
 {
-    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
 }
 
-#showcase h1
+.navbar-nav
 {
-    font-size: 50px;
-    line-height: 1.3;
-    position: relative;
-    animation: heading;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
+    font-size: 1.7em;
 }
 
 #codeon-logo
 {
     width:8%;
     height:8%;
+}
+
+.names
+{
+    text-align: left;
+    color: green;
+    padding-left: 70px;
 }
