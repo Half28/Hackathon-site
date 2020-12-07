@@ -1,0 +1,112 @@
+<!-- 
+    Code and comments written by Connor Tollefson on GitHub
+    Completed 12/6/20
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>CODEon!</title>
+		<link rel="icon" type="image" href="images/favicon.ico">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+		
+		<!-- Bootstrap core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Material Design Bootstrap -->
+		<link href="css/mdb.min.css" rel="stylesheet">
+		<script src="js/learn.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<!-- Custom styles -->
+		<link href="css/learn.css" rel="stylesheet">
+	</head>
+	
+	<body>
+		<!-- NAVBAR -->
+		<nav class="navbar navbar-expand-lg navbar-light white">
+			<img src="images/codeonlogo.png" class="navbar-brand" id="codeon-logo">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+    		aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+    			<ul class="navbar-nav">
+    				<li class="nav-item active">
+        				<a class="nav-link" href="https://stiffyoyo72.qoom.space/home.html">HOME <span class="sr-only">(current)</span></a>
+    				</li>
+    				<li class="nav-item">
+        				<a class="nav-link" href="#">LEARN</a>
+    				</li>
+    				<li class="nav-item">
+        				<a class="nav-link" href="https://stiffyoyo72.qoom.space/profile.html">ABOUT</a>
+    				</li>
+    			</ul>
+			</div>
+		</nav>
+	    <!-- END NAVBAR -->
+	    
+		<h1>Learn!</h1>
+		<br>
+		<!-- Start of protein activity -->
+		<h2 class="subtopic">Amino acid coding</h2>
+		<p class="subtopic_body">In order to create proteins, a necessary building block of life, we need to make amino acids. They join together to form polypeptides, which are needed to create proteins. Amino acids are formed by tRNA, a type of RNA. RNA is like DNA's messenger, and it is special because it can travel outside of the nucleus.</p>
+		
+		<br>
+		
+		<p class="subtopic_body">To simulate how tRNA orders codons, try inputting a 3 letter sequence of A, U, G, and C! Use the table below to decide what amino acid you want to make.</p>
+		<input type="text" id="codon">
+		<button id="submitsequence">Go!</button>
+
+		<p id="aug" class="codonInfo">You entered AUG, which represents the start codon! This tells your body when a new codon begins. More info can be found <a href="https://biologydictionary.net/start-codon/" class="moreinfo">here.</a></p>
+		<p id="ile" class="codonInfo">You entered AUC, AUG, or AUA, which all represent Isoleucine! It assists with wound healing. More info can be found <a href="https://pubchem.ncbi.nlm.nih.gov/compound/l-isoleucine#:~:text=ChEBI,promoting%20secretion%20of%20several%20hormones." class="moreinfo">here.</a></p>
+		<p id="leu" class="codonInfo">You entered the sequence for Leucine! A fun fact about Leucine is that it's important for many metabolic functions. More info can be found <a href="https://pubchem.ncbi.nlm.nih.gov/compound/Leucine#:~:text=Leucine%20is%20one%20of%20nine,hormone%20production%3B%20and%20wound%20healing." class="moreinfo">here</a>.</p>
+		<p id="phe" class="codonInfo">You entered the sequence for Phenylalanine! It's important for making important molecules within your body. More info can be found <a class="moreinfo" href="https://pubchem.ncbi.nlm.nih.gov/compound/Phenylalanine">here.</a></p>
+		<p id="tyr" class="codonInfo">You entered the sequence for Tyrosine! Tyrosine is important for the production of several important brain chemicals. More info can be found <a class="moreinfo" href="https://www.mountsinai.org/health-library/supplement/tyrosine">here.</a></p>
+		<p id="stop" class="codonInfo">You entered the stop sequence! This tells your body when one codon ends and another begins. More info can be found <a class="moreinfo" href="https://www.genome.gov/genetics-glossary/Stop-Codon">here.</a></p>
+		<p id="cys" class="codonInfo">You entered the sequence for Cysteine! This helps maintain the trusture of proteins in your body. More info can be found <a class="moreinfo" href="https://wa.kaiserpermanente.org/kbase/topic.jhtml?docId=hn-2835000">here.</a></p>
+		<p id="trp" class="codonInfo">You entered the sequence for Tryptophan! It's needed for normal growth in infants and for the production and maintenance of the body's proteins and muscles. More info can be found <a class="moreinfo" href="https://www.sleep.org/what-is-tryptophan/"></a></p>
+		<p id="ser" class="codonInfo">You entered the sequence for Serine! Your body needs it to break down fats and other molecules. More info can be found <a class="moreinfo" href="https://pubchem.ncbi.nlm.nih.gov/compound/Serine#:~:text=Serine%20is%20a%20non%2Dessential,and%20a%20healthy%20immune%20system.">here.</a></p>
+		<p id="pro" class="codonInfo">You entered the sequence for Proline! Your body needs it for healing wounds and fighting off diseases. More info can be found <a class="moreinfo" href="https://pubchem.ncbi.nlm.nih.gov/compound/Proline">here.</a></p>
+		<p id="his" class="codonInfo">You entered the sequence for Histidine! Your body needs it for growth and tissue repair. More info can be found <a class="moreinfo" href="https://pubchem.ncbi.nlm.nih.gov/compound/Histidine">here.</a></p>
+		<p id="gln" class="codonInfo">You entered the sequence for Glutamine! It's critical to your immune system to fight off diseases. More can be found <a class="moreinfo" href="https://pubchem.ncbi.nlm.nih.gov/compound/Glutamine">here.</a></p>
+		<p id="arg" class="codonInfo">You entered the sequence for Arginine! It's used to prevent heart disease and stimulate your immune system. More info can be found <a class="moreinfo" href="https://pubchem.ncbi.nlm.nih.gov/compound/Arginine#:~:text=Arginine%20is%20an%20essential%20amino,and%20stimulate%20the%20immune%20system.">here.</a></p>
+		<p id="thr" class="codonInfo">You entered the sequence for Threonine! It balances proteins within your body. More info can be found <a class="moreinfo" href="https://pubchem.ncbi.nlm.nih.gov/compound/L-Threonine">here.</a></p>
+		<p id="asp" class="codonInfo">You entered the sequence for Aspartic Acid! It's used to synthesize other amino acids. More info can be found <a class="moreinfo" href="https://pubchem.ncbi.nlm.nih.gov/compound/Aspartic-acid#:~:text=Aspartic%20Acid%20is%20a%20non,are%20synthesized%20from%20aspartic%20acid.">here.</a></p>
+		<p id="lys" class="codonInfo">You entered the sequence for Lysine! It is essential for growth and tissue repair. More info can be found <a class="moreinfo" href="https://pubchem.ncbi.nlm.nih.gov/compound/Lysine">here.</a></p>
+		<p id="val" class="codonInfo">You entered the sequence for Valine! It's used for muscle growth and energy for your body. More info can be found <a class="moreinfo" href="https://pubchem.ncbi.nlm.nih.gov/compound/Valine#:~:text=Valine%20is%20an%20aliphatic%20and,to%20determine%20three%2Ddimensional%20structure.">here.</a></p>
+		<p id="ala" class="codonInfo">You entered the sequence for Alanine! It strengthens the immune system and is a source of energy for your muscles. More info can be found <a href="https://pubchem.ncbi.nlm.nih.gov/compound/Alanine" class="moreinfo">here.</a></p>
+		<p id="glu" class="codonInfo">You entered the sequence for Glutamic Acid! It's an important nutrient for your brain. More info can be found <a class="moreinfo" href="https://pubchem.ncbi.nlm.nih.gov/compound/Glutamic-acid">here.</a></p>
+		<p id="gly" class="codonInfo">You entered the sequence for Glycine! It's a building block for many other molecules within your body. More info can be found <a class="moreinfo" href="https://pubchem.ncbi.nlm.nih.gov/compound/Glycine">here.</a></p>
+		<p id="asn" class="codonInfo">You entered the sequence for Asparagine! It carries residual toxic chemicals out of your body. More info can be found <a class="moreinfo" href="https://pubchem.ncbi.nlm.nih.gov/compound/Asparagine#:~:text=Asparagine%20is%20a%20non%2Dessential,be%20eliminated%20from%20the%20body.">here.</a></p>
+		
+		<br>
+		<img id="codon-chart" src="images/augc-table.svg">
+		
+		<!-- Start of mutation activity -->
+		
+		<br>
+		<br>
+		<br>
+		<h2 class="subtopic">Mutation analysis can identify errors in DNA</h2>
+		<br>
+		<p class="subtopic_body">DNA polymerase is an enzyme that fixes errors during replication.</p>
+		<br>
+		<p class="subtopic_body">
+			In this activity, you are the DNA Polymerase. Your job is to find and correct the incorrect substitution in the DNA code. Click on the mutation to win!
+		</p>
+		<br>
+		<div id="mutationsActivity">
+			<p class="subtopic_body" id="indicator">Try it:</p>
+			<p class="subtopic_body">
+				Original: ATG CCG GGC GGC GAG AGC
+			</p>
+			<p class="subtopic_body">
+				Copied: <a id="incorrect">ATG</a> <a id="incorrect">CCG</a> <a id="incorrect">GGC</a> <a id="incorrect">GGC</a> <a id="correct">CAG</a> <a id="incorrect">AGC</a>
+			</p>
+			<p class="codonInfo" id="mutationinfo">Well done! That’s the mutation! Here’s a link to learn <a href="https://www.brooklyn.cuny.edu/bc/ahp/BioInfo/MUT/Mut.Definition.html#:~:text=A%20Mutation%20occurs%20when%20a,the%20genetic%20message%20is%20changed." class="moreinfo">more.</a></p>
+		</div>
+	</body>
+</html>

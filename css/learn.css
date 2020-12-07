@@ -1,0 +1,96 @@
+/*
+    Code written by Connor Tollefson on GitHub
+    Completed 12/6/20
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+  
+body
+{
+    color: white;
+    font-family: "Avenir Next", "Avenir", sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+    background-color: #30a9f0;
+}
+
+h1 {
+    color: #fff;
+    font-family: 'Avenir', sans-serif;
+    font-weight: 800;
+    font-size: 4em;
+    letter-spacing: -2px;
+    text-align: center;
+    text-shadow: 1px 2px 1px rgba(0, 0, 0, .6);
+}
+
+.topic-divider
+{
+    width: 50%;
+    height: 5px;
+    margin: auto;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+.subtopic
+{
+    text-align: left;
+    font-size: 1.7em;
+    padding-left:40px;
+    padding-right:40px;
+}
+
+.subtopic_body
+{
+    text-align: left;
+    padding-top: 10px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.container{
+    max-width: 960px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+.codonInfo
+{
+    display: none;
+    color: black;
+}
+
+.moreinfo
+{
+    color: red;
+}
+
+#codeon-logo
+{
+    width:8%;
+    height:8%;
+}
+
+#submitsequence {
+    transition-duration: 0.4s;
+}
+
+#submitsequence:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#codon-chart
+{
+    width: 25%;
+    padding-top: 50px;
+}
+
+#mutationinfo
+{
+    color: white;
+}
